@@ -75,4 +75,15 @@ switch(true){
 //*****************
 // Truthy and Falsy values and equality operators
 
+// falsy values: undefine, null, 0, '', NaN
+/*
+let height;
+height = 0;
+
+(height) ? console.log ('Variblre is defined') : console.log ('Variblre is undefined');
+*/
+
+// Coding Chalenge #2
+
+
 
