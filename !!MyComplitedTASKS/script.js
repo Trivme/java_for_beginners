@@ -13,8 +13,9 @@ if(civilStarus === 'married'){
  */
 
 // ****************
-//Boolean ligi
+//Boolean ligic
 
+/*
 let firstName  = 'John';
 let age = 20;
 
@@ -27,4 +28,14 @@ if(age < 13){
 } else {
     console.log(firstName + ' is a men');
 }
+*/
+
+//***************
+// The Ternary Operator and Switch Statements
+
+let firstName = 'John';
+let age = 16;
+
+age >= 18 ? console.log(firstName + ' drinks beer') : console.log(firstName + ' drinks juice');
+
 
