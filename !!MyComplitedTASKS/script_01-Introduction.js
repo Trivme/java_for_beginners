@@ -85,5 +85,19 @@ height = 0;
 
 // Coding Chalenge #2
 
+//***************************************************************************************
+//***************************************************************************************
 
+// FUNCTIONS
+
+function calculateAge(birthYear){
+    return 2019 - birthYear;
+}
+
+console.log(calculateAge(1990));
+
+function yearUntilRetirement(year, firstName){
+    let age = calculateAge(year);
+    let retirement =  65 - year
+}
 
