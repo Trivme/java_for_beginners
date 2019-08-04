@@ -134,7 +134,7 @@ console.log(whatDoYouDo('retiter', 'Tim'));
 
 //***************************
 // Arrays
-
+/*
 let names = ['John', 'Mark', 'Jane'];
 let years = new Array(1990, 1969, 1948);
 
@@ -144,3 +144,20 @@ names[1] = 'Ben';
 names[5] = 'Mary';
 
 console.log(names, names.length);
+
+//Different data type
+
+let john = ['John', 'Smith', 1990, 'designer', false];
+
+john.push('blue');
+john.unshift('Mr');
+console.log(john);
+john.pop();
+john.shift();
+console.log(john);
+
+console.log(john.indexOf('Smith'));
+
+let isDesigner = john.indexOf('designer') === -1 ? 'John is NOT a designer' : 'John is a designer';
+console.log(isDesigner);
+*/
