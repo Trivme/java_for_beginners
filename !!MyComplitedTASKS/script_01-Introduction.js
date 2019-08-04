@@ -89,7 +89,7 @@ height = 0;
 //***************************************************************************************
 
 // FUNCTIONS
-
+/*
 function calculateAge(birthYear){
     return 2019 - birthYear;
 }
@@ -110,7 +110,37 @@ function yearUntilRetirement(year, firstName){
 yearUntilRetirement(1990, 'Bob');
 yearUntilRetirement(1970, 'Mike');
 yearUntilRetirement(1948, 'Tim');
+*/
 
-
+//***********************************
 // Function Statements and Expressions
+/*
+let whatDoYouDo = function(job, firstName){
+    switch(job){
+        case 'teacher':
+            return firstName + ' teaches kids hoe to code';
+        case 'driver':
+            return firstName + ' drives a cab in Lisbon';
+        case 'QA':
+            return firstName + ' tests web applications';
+        default:
+            return firstName + ' does nothing';
+    }
+}
 
+console.log(whatDoYouDo('teacher', 'Bob'));
+console.log(whatDoYouDo('retiter', 'Tim'));
+*/
+
+//***************************
+// Arrays
+
+let names = ['John', 'Mark', 'Jane'];
+let years = new Array(1990, 1969, 1948);
+
+console.log(names, names.length);
+
+names[1] = 'Ben';
+names[5] = 'Mary';
+
+console.log(names, names.length);
