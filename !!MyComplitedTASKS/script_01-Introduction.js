@@ -163,7 +163,7 @@ console.log(isDesigner);
 */
 
 //Coding Challenge 3 Tips Calculator
-
+/*
 function tipCalculator(bill) {
     let percentage;
     if (bill < 50) {
@@ -184,3 +184,38 @@ let finalValues = [bills[0] + tips[0],
                     bills[2] + tips[2]];
 
 console.log(tips, finalValues);
+
+ */
+
+//**************************
+//Objects and Properties
+
+/*
+let jane = new Object();
+jane.firstName = 'Jane';
+jane.lastName = 'Smith';
+jane.birthYear = 1969;
+jane.job = 'driver';
+console.log(jane);
+console.log('');
+
+let john = {
+    firstName : 'John',
+    lastName : 'Smith',
+    birthYear : 1990,
+    family : [jane, 'Mark', 'Bob', 'Emily'],
+    job : 'teacher',
+    isMarried : false
+};
+
+console.log(john.firstName);
+console.log('');
+
+john.job = 'designer';
+john['isMarried'] = true;
+console.log(john);
+
+ */
+//*************************
+// Objects and methods
+
