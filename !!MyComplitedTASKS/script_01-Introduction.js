@@ -75,12 +75,12 @@ switch(true){
 //*****************
 // Truthy and Falsy values and equality operators
 
-// falsy values: undefine, null, 0, '', NaN
+// falsy values: undefined, null, 0, '', NaN
 /*
 let height;
 height = 0;
 
-(height) ? console.log ('Variblre is defined') : console.log ('Variblre is undefined');
+(height) ? console.log ('Variable is defined') : console.log ('Variblre is undefined');
 */
 
 // Coding Chalenge #2
@@ -218,4 +218,130 @@ console.log(john);
  */
 //*************************
 // Objects and methods
+/*
+let john = {
+    firstName : 'John',
+    lastName : 'Smith',
+    birthYear : 1990,
+    family : ['Jane', 'Mark', 'Bob', 'Emily'],
+    job : 'teacher',
+    isMarried : false,
+    calcAge : function(birthYear){
+        this.age = 2019 - this.birthYear;
+    }
+};
+console.log(john.calcAge(1990));
+
+console.log(john);
+
+ */
+//*************************
+// Coding Challenge 4
+/*
+let john = {
+    fullName : 'John Smith',
+    height : 1.82,
+    weight : 129,
+    calcBMI : function(){
+        this.bmi = this.weight / (this.height * this.height);
+        return this.bmi;
+
+    }
+};
+
+let mark = {
+    fullName : 'Mark Doe',
+    height : 1.91,
+    weight : 96,
+    calcBMI : function(){
+        this.bmi = this.weight / (this.height * this.height);
+        return this.bmi;
+    }
+};
+
+if(john.calcBMI() > mark.calcBMI()){
+    console.log(john.fullName + ' has a higher BMI of ' + john.bmi);
+} else if (mark.bmi > john.bmi) {
+    console.log(mark.fullName + ' has a higher BMI of ' + mark.bmi);
+} else {
+    console.log('They havee the same BMI');
+}
+
+ */
+// ****************************
+// Loops and Iteration
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
