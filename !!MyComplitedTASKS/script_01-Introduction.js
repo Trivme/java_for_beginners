@@ -98,6 +98,19 @@ console.log(calculateAge(1990));
 
 function yearUntilRetirement(year, firstName){
     let age = calculateAge(year);
-    let retirement =  65 - year
+    let retirement =  65 - age;
+
+    if(retirement > 0) {
+        console.log(firstName + ' retires in ' + retirement + ' years.');
+    } else {
+        console.log(firstName + ' is already retired');
+    }
 }
+
+yearUntilRetirement(1990, 'Bob');
+yearUntilRetirement(1970, 'Mike');
+yearUntilRetirement(1948, 'Tim');
+
+
+// Function Statements and Expressions
 
