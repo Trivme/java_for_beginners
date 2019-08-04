@@ -308,12 +308,68 @@ for(let i = john.length - 1; i >= 0; i--){
 }
 
  */
-//*****************************
+//*****************************+  !!!!!! Section 1 Final Task !!!!!!! ********************************
 // Coding challenge 5
 
+let john = {
+    fullName : 'John Smith',
+    bills : [124, 48, 268, 180, 42],
+    calcTips : function(){
+        this.tips = [],
+        this.finalValues = [];
 
+        for(let i = 0; i < this.bills.length; i++){
+            //Determine the percentage based on tipping rules
+            let percentage;
+            if (this.bills[i] < 50) percentage = .2;
+            else if (this.bills[i] >= 50 && this.bills[i] < 200) percentage = .15;
+            else percentage = .1;
 
+            //Add result to the corresponding arrays
+            this.tips[i] = Math.round(this.bills[i] * percentage);
+            this.finalValues[i] = Math.round(this.bills[i] + this.bills[i] * percentage);
+        }
+    }
+}
 
+let mark = {
+    fullName : 'Mark Doe',
+    bills : [77, 375, 110, 45],
+    calcTips : function(){
+        this.tips = [],
+            this.finalValues = [];
+
+        for(let i = 0; i < this.bills.length; i++){
+            //Determine the percentage based on tipping rules
+            let percentage;
+            if (this.bills[i] < 100) percentage = .2;
+            else if (this.bills[i] >= 100 && this.bills[i] < 300) percentage = .1;
+            else percentage = .25;
+
+            //Add result to the corresponding arrays
+            this.tips[i] = Math.round(this.bills[i] * percentage);
+            this.finalValues[i] = Math.round(this.bills[i] + this.bills[i] * percentage);
+        }
+    }
+}
+function calcAverage(tips){
+    let sum = 0;
+    for(let i = 0; i < tips.length; i++){
+        sum = sum + tips[i];
+    }
+    return sum / tips.length;
+}
+
+john.calcTips();
+mark.calcTips();
+john.average = calcAverage(john.tips);
+mark.average = calcAverage(mark.tips);
+console.log(john);
+console.log(mark);
+
+if(john.average > mark.average) console.log(john.fullName + "\'s family pays higher tips, with average of $" + john.average);
+else if(john.average < mark.average) console.log(mark.fullName + "\'s family pays higher tips, with average of $" + mark.average);
+else console.log(john.fullName + "\'s family and " + mark.fullName + "\'s family pays the same tips, with average of $" + john.average + ' and ' + mark.average);
 
 
 
