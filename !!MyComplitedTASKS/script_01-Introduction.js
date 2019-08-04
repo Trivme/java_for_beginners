@@ -270,11 +270,46 @@ if(john.calcBMI() > mark.calcBMI()){
  */
 // ****************************
 // Loops and Iteration
+/*
+console.log('________FOR LOOP');
+for(let i = 0; i < 10; i++){
+    console.log(i);
+}
+let john = ['John', 'Smith', 1970, 'carpenter', false];
+for (let i = 0; i < john.length; i++ ){
+    console.log(john[i]);
+}
 
+//----
+console.log('_______WHILE LOOP');
+let i = 0;
+while(i < john.length){
+    console.log(john[i]);
+    i++;
+}
 
+// continue and brake statements
+console.log('______CONTINUE');
 
+for (let i = 0; i < john.length; i++ ){
+    if(typeof john[i] !== 'string') continue;
+    console.log(john[i]);
+}
+console.log('______BREAK')
+for (let i = 0; i < john.length; i++ ){
+    if(typeof john[i] !== 'string') break;
+    console.log(john[i]);
+}
 
+// Looping backwards
+console.log('_____LOOP BACKWARDS')
+for(let i = john.length - 1; i >= 0; i--){
+    console.log(i):
+}
 
+ */
+//*****************************
+// Coding challenge 5
 
 
 
