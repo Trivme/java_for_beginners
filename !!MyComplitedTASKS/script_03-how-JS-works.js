@@ -30,42 +30,42 @@ console.log(age)
 ///////////////////////////////////////
 // Lecture: Scoping
 
-
 // First scoping example
 /*
 
-var a = 'Hello!';
+let a = 'Hello!';
 first();
 function first() {
-    var b = 'Hi!';
+    let b = 'Hi!';
     second();
     function second() {
-        var c = 'Hey!';
+        let c = 'Hey!';
         console.log(a + b + c);
     }
 }
 
-*/
-
+ */
 
 // Example to show the differece between execution stack and scope chain
 
-/*
-var a = 'Hello!';
+
+let a = 'Hello!';
 first();
 function first() {
-    var b = 'Hi!';
+    let b = 'Hi!';
     second();
     function second() {
-        var c = 'Hey!';
+        let c = 'Hey!';
         third()
     }
 }
 function third() {
-    var d = 'John';
-    console.log(a + b + c + d);
+    let d = 'John';
+    console.log(a + d);
 }
-*/
+
+
+
 
 
 
