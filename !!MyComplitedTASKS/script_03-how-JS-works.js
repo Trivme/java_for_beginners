@@ -4,6 +4,7 @@
 
 ///////////////////////////////////////
 // Lecture: Hoisting
+/*
 calculateAge(1965);
 function calculateAge(year){
     console.log(2019 - year);
@@ -26,7 +27,7 @@ function foo(){
 }
 foo();
 console.log(age)
-
+*/
 ///////////////////////////////////////
 // Lecture: Scoping
 
@@ -46,9 +47,8 @@ function first() {
 
  */
 
-// Example to show the differece between execution stack and scope chain
-
-
+// Example to show the difference between execution stack and scope chain
+/*
 let a = 'Hello!';
 first();
 function first() {
@@ -63,12 +63,40 @@ function third() {
     let d = 'John';
     console.log(a + d);
 }
-
-
-
-
-
+*/
 
 ///////////////////////////////////////
 // Lecture: The this keyword
 
+//console.log(this); // this - is global object here (windows etc.)
+/*
+calculateAge(1985);
+function calculateAge(year) {
+    console.log(2019 - year);
+    console.log(this);
+}
+ */
+
+let john = {
+    name : 'John',
+    yearOfBirth : 1990,
+    calculateAge : function(){
+        console.log(this);
+        console.log(2019 - this.yearOfBirth);
+/*
+        function innerFunction(){
+            console.log(this);
+        }
+        innerFunction();
+*/
+    }
+}
+john.calculateAge();
+
+let mike = {
+    name : 'Mike',
+    yearOfBirth : 1984,
+
+}
+mike.calculateAge = john.calculateAge; //borrow john's method to mike!!!!
+mike.calculateAge();
